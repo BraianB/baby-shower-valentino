@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 500">
+<defs>
+  <linearGradient id="fur" x1="25%" y1="10%" x2="75%" y2="100%">
+    <stop offset="0" stop-color="#F6DDBD"/>
+    <stop offset=".55" stop-color="#DDB58A"/>
+    <stop offset="1" stop-color="#B9895E"/>
+  </linearGradient>
+  <linearGradient id="belly" x1="30%" y1="10%" x2="70%" y2="100%">
+    <stop offset="0" stop-color="#FFF0D9"/>
+    <stop offset="1" stop-color="#EBCDA9"/>
+  </linearGradient>
+  <radialGradient id="ear" cx="50%" cy="40%" r="70%">
+    <stop offset="0" stop-color="#F8D8D0"/>
+    <stop offset="1" stop-color="#D69D91"/>
+  </radialGradient>
+  <filter id="shadow" x="-30%" y="-20%" width="160%" height="160%">
+    <feDropShadow dx="0" dy="9" stdDeviation="8" flood-color="#80674F" flood-opacity=".22"/>
+  </filter>
+</defs>
+
+<g id="teddy" filter="url(#shadow)">
+
+  <!-- Ears -->
+  <g id="ears">
+    <circle cx="112" cy="112" r="57" fill="url(#fur)" stroke="#B8875D" stroke-width="2"/>
+    <circle cx="112" cy="112" r="34" fill="url(#ear)" opacity=".75"/>
+    <circle cx="308" cy="112" r="57" fill="url(#fur)" stroke="#B8875D" stroke-width="2"/>
+    <circle cx="308" cy="112" r="34" fill="url(#ear)" opacity=".75"/>
+  </g>
+
+  <!-- Head -->
+  <ellipse cx="210" cy="190" rx="122" ry="112"
+           fill="url(#fur)" stroke="#B8875D" stroke-width="2"/>
+
+  <!-- Muzzle -->
+  <ellipse cx="210" cy="231" rx="67" ry="53"
+           fill="#F7DFC1" opacity=".95"/>
+
+  <!-- Eyes -->
+  <g id="face">
+    <path d="M151 184 Q166 174 181 184"
+          fill="none" stroke="#6B4A35" stroke-width="6"
+          stroke-linecap="round"/>
+    <path d="M239 184 Q254 174 269 184"
+          fill="none" stroke="#6B4A35" stroke-width="6"
+          stroke-linecap="round"/>
+
+    <!-- Tiny lashes -->
+    <path d="M154 182L148 178M178 182L183 178"
+          stroke="#6B4A35" stroke-width="3" stroke-linecap="round"/>
+    <path d="M242 182L237 178M266 182L272 178"
+          stroke="#6B4A35" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Nose -->
+    <path d="M195 219 Q210 208 225 219
+             Q222 235 210 238
+             Q198 235 195 219Z"
+          fill="#7B513A"/>
+
+    <!-- Smile -->
+    <path d="M210 236 Q210 248 198 252"
+          fill="none" stroke="#6B4633" stroke-width="4"
+          stroke-linecap="round"/>
+    <path d="M210 246 Q210 258 222 261"
+          fill="none" stroke="#6B4633" stroke-width="4"
+          stroke-linecap="round"/>
+
+    <!-- Blush -->
+    <ellipse cx="143" cy="225" rx="25" ry="13"
+             fill="#F2AFA8" opacity=".42"/>
+    <ellipse cx="277" cy="225" rx="25" ry="13"
+             fill="#F2AFA8" opacity=".42"/>
+  </g>
+
+  <!-- Body -->
+  <ellipse cx="210" cy="365" rx="112" ry="105"
+           fill="url(#fur)" stroke="#B8875D" stroke-width="2"/>
+
+  <!-- Belly -->
+  <ellipse cx="210" cy="373" rx="70" ry="72"
+           fill="url(#belly)"/>
+
+  <!-- Arms -->
+  <path d="M112 326
+           Q72 350 84 397
+           Q91 424 116 414
+           Q138 404 132 378
+           Q128 351 112 326Z"
+        fill="url(#fur)" stroke="#B8875D" stroke-width="2"/>
+
+  <path d="M308 326
+           Q348 350 336 397
+           Q329 424 304 414
+           Q282 404 288 378
+           Q292 351 308 326Z"
+        fill="url(#fur)" stroke="#B8875D" stroke-width="2"/>
+
+  <!-- Feet -->
+  <ellipse cx="150" cy="454" rx="48" ry="27"
+           fill="url(#fur)" stroke="#B8875D" stroke-width="2"/>
+  <ellipse cx="270" cy="454" rx="48" ry="27"
+           fill="url(#fur)" stroke="#B8875D" stroke-width="2"/>
+
+  <!-- Paw pads -->
+  <ellipse cx="150" cy="454" rx="24" ry="14" fill="#EBC6A6" opacity=".75"/>
+  <ellipse cx="270" cy="454" rx="24" ry="14" fill="#EBC6A6" opacity=".75"/>
+
+  <!-- Belly heart -->
+  <path id="belly_heart"
+        d="M210 402
+           C196 386 169 395 169 414
+           C169 434 193 445 210 458
+           C227 445 251 434 251 414
+           C251 395 224 386 210 402Z"
+        fill="#F4C9C4" opacity=".72"/>
+
+  <!-- Fur highlights -->
+  <ellipse cx="169" cy="127" rx="35" ry="18"
+           fill="#FFF5E7" opacity=".24"/>
+  <ellipse cx="176" cy="324" rx="38" ry="18"
+           fill="#FFF5E7" opacity=".18"/>
+
+</g>
+</svg>

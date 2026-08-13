@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 160 160"
+    width="160"
+    height="160"
+>
+
+    <defs>
+
+        <!-- Azul principal -->
+        <linearGradient
+            id="locationBlue"
+            x1="0"
+            y1="0"
+            x2="1"
+            y2="1"
+        >
+            <stop offset="0%" stop-color="#A9DDF8"/>
+            <stop offset="100%" stop-color="#609FDB"/>
+        </linearGradient>
+
+        <!-- Dorado -->
+        <linearGradient
+            id="locationGold"
+            x1="0"
+            y1="0"
+            x2="1"
+            y2="1"
+        >
+            <stop offset="0%" stop-color="#FFE9A6"/>
+            <stop offset="100%" stop-color="#E5B650"/>
+        </linearGradient>
+
+        <!-- Fondo -->
+        <radialGradient
+            id="locationCenter"
+            cx="50%"
+            cy="40%"
+            r="60%"
+        >
+            <stop offset="0%" stop-color="#FFFFFF"/>
+            <stop offset="100%" stop-color="#EDF6FC"/>
+        </radialGradient>
+
+        <!-- Sombra -->
+        <filter
+            id="locationShadow"
+            x="-30%"
+            y="-30%"
+            width="160%"
+            height="170%"
+        >
+            <feDropShadow
+                dx="0"
+                dy="6"
+                stdDeviation="5"
+                flood-color="#547FA6"
+                flood-opacity=".22"
+            />
+        </filter>
+
+    </defs>
+
+
+    <!-- =========================================
+         HALO
+    ========================================== -->
+
+    <circle
+        cx="80"
+        cy="76"
+        r="58"
+        fill="#B9DFF3"
+        opacity=".16"
+    />
+
+
+    <!-- =========================================
+         PIN PRINCIPAL
+    ========================================== -->
+
+    <path
+        d="
+            M 80 22
+
+            C 49 22
+              27 45
+              27 75
+
+            C 27 108
+              57 128
+              80 145
+
+            C 103 128
+              133 108
+              133 75
+
+            C 133 45
+              111 22
+              80 22
+
+            Z
+        "
+        fill="url(#locationBlue)"
+        stroke="#FFFFFF"
+        stroke-width="4"
+        filter="url(#locationShadow)"
+    />
+
+
+    <!-- =========================================
+         INTERIOR DEL PIN
+    ========================================== -->
+
+    <circle
+        cx="80"
+        cy="73"
+        r="29"
+        fill="url(#locationCenter)"
+    />
+
+
+    <!-- =========================================
+         PUNTO CENTRAL
+    ========================================== -->
+
+    <circle
+        cx="80"
+        cy="73"
+        r="13"
+        fill="url(#locationGold)"
+    />
+
+    <circle
+        cx="76"
+        cy="69"
+        r="4"
+        fill="#FFF7D5"
+        opacity=".85"
+    />
+
+
+    <!-- =========================================
+         PEQUEÑOS DESTELLOS
+    ========================================== -->
+
+    <g
+        fill="#FFE7A0"
+    >
+
+        <path
+            d="
+                M 30 39
+                L 33 48
+                L 42 51
+                L 33 54
+                L 30 63
+                L 27 54
+                L 18 51
+                L 27 48
+                Z
+            "
+        />
+
+        <path
+            d="
+                M 132 103
+                L 135 111
+                L 143 114
+                L 135 117
+                L 132 125
+                L 129 117
+                L 121 114
+                L 129 111
+                Z
+            "
+        />
+
+    </g>
+
+
+    <!-- =========================================
+         PEQUEÑOS PUNTOS DECORATIVOS
+    ========================================== -->
+
+    <circle
+        cx="45"
+        cy="107"
+        r="4"
+        fill="#FFFFFF"
+        opacity=".75"
+    />
+
+    <circle
+        cx="116"
+        cy="45"
+        r="4"
+        fill="#FFFFFF"
+        opacity=".75"
+    />
+
+</svg>

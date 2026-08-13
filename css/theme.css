@@ -1,0 +1,26 @@
+:root{
+
+    --primary:#5A83C8;
+
+    --secondary:#6EA7F0;
+
+    --background:#EAF5FF;
+
+    --card:#FFFFFF;
+
+    --text:#707D90;
+
+    --gold:#FFD97A;
+
+    --shadow:0 25px 70px rgba(0,0,0,.12);
+
+    --radius:30px;
+
+    background:var(--card);
+
+color:var(--primary);
+
+border-radius:var(--radius);
+
+}
+

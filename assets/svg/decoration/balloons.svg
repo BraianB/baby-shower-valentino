@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 520">
+<defs>
+<linearGradient id="blue" x1="20%" y1="10%" x2="80%" y2="100%"><stop offset="0" stop-color="#DDF4FF"/><stop offset=".5" stop-color="#9DD7F7"/><stop offset="1" stop-color="#65B4E7"/></linearGradient>
+<linearGradient id="lightBlue" x1="20%" y1="10%" x2="80%" y2="100%"><stop offset="0" stop-color="#E8F8FF"/><stop offset=".55" stop-color="#B9E4FA"/><stop offset="1" stop-color="#83C7EE"/></linearGradient>
+<linearGradient id="deepBlue" x1="20%" y1="10%" x2="80%" y2="100%"><stop offset="0" stop-color="#C7E9FF"/><stop offset=".5" stop-color="#79BFF0"/><stop offset="1" stop-color="#4C96D5"/></linearGradient>
+<linearGradient id="gold" x1="20%" y1="10%" x2="80%" y2="100%"><stop offset="0" stop-color="#FFF6C9"/><stop offset=".55" stop-color="#F6D87D"/><stop offset="1" stop-color="#DDAE43"/></linearGradient>
+<filter id="shadow" x="-30%" y="-20%" width="160%" height="150%"><feDropShadow dx="0" dy="8" stdDeviation="7" flood-color="#6E91AA" flood-opacity=".2"/></filter>
+</defs>
+
+<g id="balloons">
+<g id="balloon_left" filter="url(#shadow)">
+<path d="M94 190C58 190 35 157 38 117C41 76 65 49 98 49C132 49 154 77 157 117C160 157 137 190 101 190C100 190 97 190 94 190Z" fill="url(#blue)" stroke="#78BCE5" stroke-width="2"/>
+<ellipse cx="76" cy="91" rx="16" ry="29" fill="#fff" opacity=".3"/>
+<path d="M91 189L96 204L101 189Z" fill="#65A9D5"/>
+<path d="M96 204C99 274 82 337 110 410" fill="none" stroke="#A5A9AE" stroke-width="1.5"/>
+</g>
+
+<g id="balloon_center" filter="url(#shadow)">
+<path d="M190 169C157 169 137 140 140 105C143 70 164 45 193 45C223 45 243 70 246 105C249 140 228 169 196 169C194 169 192 169 190 169Z" fill="url(#lightBlue)" stroke="#9ACFEB" stroke-width="2"/>
+<ellipse cx="174" cy="80" rx="13" ry="25" fill="#fff" opacity=".32"/>
+<path d="M190 168L194 182L198 168Z" fill="#83BBD9"/>
+<path d="M194 182C193 260 184 333 170 413" fill="none" stroke="#A5A9AE" stroke-width="1.5"/>
+</g>
+
+<g id="balloon_right" filter="url(#shadow)">
+<path d="M285 190C250 190 227 157 230 117C233 77 257 50 289 50C321 50 345 77 348 117C351 157 328 190 293 190C290 190 288 190 285 190Z" fill="url(#deepBlue)" stroke="#67A8D8" stroke-width="2"/>
+<ellipse cx="269" cy="91" rx="15" ry="28" fill="#fff" opacity=".28"/>
+<path d="M285 189L290 204L295 189Z" fill="#5898CA"/>
+<path d="M290 204C284 274 296 338 260 414" fill="none" stroke="#A5A9AE" stroke-width="1.5"/>
+</g>
+
+<g id="balloon_gold" opacity=".88">
+<path d="M345 247C323 247 310 228 312 204C314 181 329 166 348 166C367 166 382 181 384 204C386 228 373 247 351 247C349 247 347 247 345 247Z" fill="url(#gold)" stroke="#E2BB61" stroke-width="1.5"/>
+<ellipse cx="337" cy="190" rx="9" ry="16" fill="#fff" opacity=".3"/>
+<path d="M345 247L348 257L351 247Z" fill="#D7AA4D"/>
+<path d="M348 257C350 302 340 348 326 390" fill="none" stroke="#B0B0B0" stroke-width="1.2"/>
+</g>
+</g>
+</svg>

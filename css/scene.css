@@ -1,0 +1,160 @@
+/* =========================================
+   ESCENARIO
+========================================= */
+
+#scene {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+
+    /* El cielo SVG ahora controla el fondo */
+    background: #C9E4F3;
+}
+
+
+/* =========================================
+   CIELO SVG
+========================================= */
+
+#sky {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    z-index: 0;
+    pointer-events: none;
+}
+
+.sky-svg {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* =========================================
+   ESTRELLAS SVG
+========================================= */
+
+.stars-svg {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    z-index: 1;
+
+    pointer-events: none;
+}
+
+
+/* =========================================
+   LUNA
+========================================= */
+
+.moon {
+    position: absolute;
+
+    top: 55px;
+    left: 50%;
+
+    width: 220px;
+    height: 220px;
+
+    transform: translateX(-50%);
+
+    z-index: 2;
+
+    pointer-events: none;
+}
+
+
+/* =========================================
+   NUBES
+========================================= */
+
+.cloud {
+    position: absolute;
+
+    width: 260px;
+
+    opacity: .85;
+
+    z-index: 3;
+
+    pointer-events: none;
+}
+
+
+/* Nube izquierda */
+
+.cloud-left {
+    top: 90px;
+    left: -180px;
+
+    width: 420px;
+}
+
+
+/* Nube derecha */
+
+.cloud-right {
+    right: -170px;
+    bottom: 120px;
+
+    width: 420px;
+}
+
+
+/* =========================================
+   GLOBOS
+========================================= */
+
+.balloons {
+    position: absolute;
+
+    right: 65px;
+    bottom: 55px;
+
+    width: 250px;
+
+    z-index: 4;
+
+    pointer-events: none;
+}
+
+
+/* =========================================
+   SOBRE
+========================================= */
+
+.envelope-wrapper {
+    z-index: 10;
+}
+
+
+/* =========================================
+   PREVENIR SELECCIÓN
+========================================= */
+
+#sky img,
+.moon,
+.cloud,
+.balloons {
+    user-select: none;
+    -webkit-user-drag: none;
+}

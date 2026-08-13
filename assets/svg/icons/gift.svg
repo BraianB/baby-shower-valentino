@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 420">
+<defs>
+  <linearGradient id="box" x1="15%" y1="5%" x2="85%" y2="100%">
+    <stop offset="0" stop-color="#DDF3FF"/>
+    <stop offset=".55" stop-color="#A8D9F3"/>
+    <stop offset="1" stop-color="#72B7E2"/>
+  </linearGradient>
+  <linearGradient id="lid" x1="10%" y1="0%" x2="90%" y2="100%">
+    <stop offset="0" stop-color="#F8FCFF"/>
+    <stop offset=".55" stop-color="#C8E8F8"/>
+    <stop offset="1" stop-color="#8BC5E8"/>
+  </linearGradient>
+  <linearGradient id="ribbon" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0" stop-color="#F7DDE1"/>
+    <stop offset=".5" stop-color="#EFB8C3"/>
+    <stop offset="1" stop-color="#D994A3"/>
+  </linearGradient>
+  <radialGradient id="gold" cx="35%" cy="25%" r="75%">
+    <stop offset="0" stop-color="#FFF4C7"/>
+    <stop offset=".55" stop-color="#E9C56B"/>
+    <stop offset="1" stop-color="#C18A32"/>
+  </radialGradient>
+  <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+    <feDropShadow dx="0" dy="10" stdDeviation="10"
+                  flood-color="#5F839C" flood-opacity=".22"/>
+  </filter>
+</defs>
+
+<g id="gift" filter="url(#shadow)">
+
+  <!-- Box -->
+  <g id="box">
+    <path d="M74 173H346V335Q346 350 331 350H89Q74 350 74 335Z"
+          fill="url(#box)" stroke="#6DA8CC" stroke-width="2.5"/>
+
+    <!-- Vertical ribbon -->
+    <path d="M194 173H226V350H194Z"
+          fill="url(#ribbon)" opacity=".96"/>
+
+    <!-- Box highlight -->
+    <path d="M94 204V320Q94 331 105 331"
+          fill="none" stroke="#FFFFFF" stroke-width="8"
+          stroke-linecap="round" opacity=".18"/>
+  </g>
+
+  <!-- Lid -->
+  <g id="lid">
+    <rect x="58" y="143" width="304" height="48" rx="12"
+          fill="url(#lid)" stroke="#72A9C9" stroke-width="2.5"/>
+    <path d="M72 158H348"
+          stroke="#FFFFFF" stroke-width="5"
+          stroke-linecap="round" opacity=".22"/>
+  </g>
+
+  <!-- Horizontal ribbon -->
+  <path id="horizontal_ribbon"
+        d="M58 158H362V190H58Z"
+        fill="url(#ribbon)" opacity=".92"/>
+
+  <!-- Bow -->
+  <g id="bow">
+    <path d="M210 143
+             C174 126 136 91 144 67
+             C150 49 177 54 194 72
+             C204 83 209 98 210 112Z"
+          fill="url(#ribbon)" stroke="#D08E9D" stroke-width="2"/>
+
+    <path d="M210 143
+             C246 126 284 91 276 67
+             C270 49 243 54 226 72
+             C216 83 211 98 210 112Z"
+          fill="url(#ribbon)" stroke="#D08E9D" stroke-width="2"/>
+
+    <path d="M204 112L180 143L207 136Z"
+          fill="#D994A3" opacity=".85"/>
+    <path d="M216 112L240 143L213 136Z"
+          fill="#C98595" opacity=".85"/>
+
+    <circle cx="210" cy="116" r="20"
+            fill="url(#gold)"
+            stroke="#B9802C"
+            stroke-width="2"/>
+
+    <path d="M203 116L208 121L218 110"
+          fill="none" stroke="#FFF8DE" stroke-width="3"
+          stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Small baby stars -->
+  <g id="sparkles" fill="#FFE8A5">
+    <path d="M92 112L96 121L105 125L96 129L92 138L88 129L79 125L88 121Z"/>
+    <path d="M330 105L333 112L340 115L333 118L330 125L327 118L320 115L327 112Z"/>
+  </g>
+
+</g>
+</svg>

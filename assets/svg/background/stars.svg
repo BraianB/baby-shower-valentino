@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 1920 1080"
+    width="1920"
+    height="1080"
+    preserveAspectRatio="xMidYMid slice"
+>
+
+    <defs>
+
+        <!-- Brillo suave -->
+        <filter
+            id="starGlow"
+            x="-100%"
+            y="-100%"
+            width="300%"
+            height="300%"
+        >
+            <feGaussianBlur
+                stdDeviation="2.5"
+                result="blur"
+            />
+
+            <feMerge>
+                <feMergeNode in="blur"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+
+        <!-- Brillo más intenso -->
+        <filter
+            id="brightGlow"
+            x="-150%"
+            y="-150%"
+            width="400%"
+            height="400%"
+        >
+            <feGaussianBlur
+                stdDeviation="4"
+                result="blur"
+            />
+
+            <feMerge>
+                <feMergeNode in="blur"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+
+    </defs>
+
+
+    <!-- =====================================================
+         ESTRELLAS PEQUEÑAS
+         ===================================================== -->
+
+    <g
+        id="small-stars"
+        fill="#FFF4C7"
+        opacity="0.9"
+    >
+
+        <circle id="star-01" cx="105" cy="145" r="2.4"/>
+        <circle id="star-02" cx="205" cy="285" r="1.8"/>
+        <circle id="star-03" cx="330" cy="105" r="2"/>
+        <circle id="star-04" cx="440" cy="230" r="1.7"/>
+        <circle id="star-05" cx="575" cy="150" r="2.2"/>
+        <circle id="star-06" cx="690" cy="310" r="1.6"/>
+        <circle id="star-07" cx="815" cy="95" r="2"/>
+        <circle id="star-08" cx="960" cy="245" r="1.8"/>
+        <circle id="star-09" cx="1080" cy="125" r="2.3"/>
+        <circle id="star-10" cx="1195" cy="300" r="1.7"/>
+        <circle id="star-11" cx="1325" cy="165" r="2"/>
+        <circle id="star-12" cx="1450" cy="265" r="1.8"/>
+        <circle id="star-13" cx="1585" cy="110" r="2.3"/>
+        <circle id="star-14" cx="1710" cy="220" r="1.7"/>
+        <circle id="star-15" cx="1830" cy="145" r="2"/>
+
+        <circle id="star-16" cx="150" cy="455" r="1.8"/>
+        <circle id="star-17" cx="285" cy="575" r="2.1"/>
+        <circle id="star-18" cx="410" cy="430" r="1.5"/>
+        <circle id="star-19" cx="555" cy="540" r="2"/>
+        <circle id="star-20" cx="720" cy="455" r="1.7"/>
+        <circle id="star-21" cx="850" cy="600" r="2"/>
+        <circle id="star-22" cx="1010" cy="480" r="1.7"/>
+        <circle id="star-23" cx="1160" cy="565" r="2.2"/>
+        <circle id="star-24" cx="1300" cy="450" r="1.6"/>
+        <circle id="star-25" cx="1435" cy="590" r="2"/>
+        <circle id="star-26" cx="1580" cy="470" r="1.7"/>
+        <circle id="star-27" cx="1740" cy="550" r="2.2"/>
+        <circle id="star-28" cx="1870" cy="430" r="1.6"/>
+
+        <circle id="star-29" cx="90" cy="760" r="2"/>
+        <circle id="star-30" cx="245" cy="850" r="1.7"/>
+        <circle id="star-31" cx="390" cy="720" r="2.1"/>
+        <circle id="star-32" cx="540" cy="890" r="1.6"/>
+        <circle id="star-33" cx="700" cy="760" r="2"/>
+        <circle id="star-34" cx="860" cy="920" r="1.7"/>
+        <circle id="star-35" cx="1020" cy="735" r="2.1"/>
+        <circle id="star-36" cx="1180" cy="880" r="1.6"/>
+        <circle id="star-37" cx="1340" cy="750" r="2"/>
+        <circle id="star-38" cx="1500" cy="920" r="1.8"/>
+        <circle id="star-39" cx="1660" cy="780" r="2.1"/>
+        <circle id="star-40" cx="1810" cy="900" r="1.7"/>
+
+    </g>
+
+
+    <!-- =====================================================
+         ESTRELLAS DE CUATRO PUNTAS
+         ===================================================== -->
+
+    <g
+        id="four-point-stars"
+        fill="#FFF1B8"
+        filter="url(#starGlow)"
+    >
+
+        <g id="spark-01">
+            <path d="
+                M 145 340
+                C 150 330, 150 320, 155 310
+                C 160 320, 160 330, 165 340
+                C 160 350, 160 360, 155 370
+                C 150 360, 150 350, 145 340
+                Z
+            "/>
+
+            <path d="
+                M 155 310
+                C 165 330, 175 335, 185 340
+                C 175 345, 165 350, 155 370
+                C 145 350, 135 345, 125 340
+                C 135 335, 145 330, 155 310
+                Z
+            "/>
+        </g>
+
+
+        <g id="spark-02">
+            <path d="
+                M 620 380
+                C 624 370, 624 360, 628 350
+                C 632 360, 632 370, 636 380
+                C 632 390, 632 400, 628 410
+                C 624 400, 624 390, 620 380
+                Z
+            "/>
+
+            <path d="
+                M 628 350
+                C 636 370, 646 376, 656 380
+                C 646 384, 636 390, 628 410
+                C 620 390, 610 384, 600 380
+                C 610 376, 620 370, 628 350
+                Z
+            "/>
+        </g>
+
+
+        <g id="spark-03">
+            <path d="
+                M 1110 355
+                C 1115 345, 1115 335, 1120 325
+                C 1125 335, 1125 345, 1130 355
+                C 1125 365, 1125 375, 1120 385
+                C 1115 375, 1115 365, 1110 355
+                Z
+            "/>
+
+            <path d="
+                M 1120 325
+                C 1130 345, 1140 350, 1150 355
+                C 1140 360, 1130 365, 1120 385
+                C 1110 365, 1100 360, 1090 355
+                C 1100 350, 1110 345, 1120 325
+                Z
+            "/>
+        </g>
+
+
+        <g id="spark-04">
+            <path d="
+                M 1510 370
+                C 1515 360, 1515 350, 1520 340
+                C 1525 350, 1525 360, 1530 370
+                C 1525 380, 1525 390, 1520 400
+                C 1515 390, 1515 380, 1510 370
+                Z
+            "/>
+
+            <path d="
+                M 1520 340
+                C 1530 360, 1540 365, 1550 370
+                C 1540 375, 1530 380, 1520 400
+                C 1510 380, 1500 375, 1490 370
+                C 1500 365, 1510 360, 1520 340
+                Z
+            "/>
+        </g>
+
+    </g>
+
+
+    <!-- =====================================================
+         ESTRELLAS DESTACADAS
+         ===================================================== -->
+
+    <g
+        id="bright-stars"
+        fill="#FFF8D9"
+        filter="url(#brightGlow)"
+    >
+
+        <g id="bright-01">
+            <circle cx="360" cy="185" r="3.5"/>
+
+            <path d="
+                M 360 155
+                L 364 181
+                L 390 185
+                L 364 189
+                L 360 215
+                L 356 189
+                L 330 185
+                L 356 181
+                Z
+            "/>
+        </g>
+
+
+        <g id="bright-02">
+            <circle cx="920" cy="150" r="3"/>
+
+            <path d="
+                M 920 122
+                L 924 146
+                L 948 150
+                L 924 154
+                L 920 178
+                L 916 154
+                L 892 150
+                L 916 146
+                Z
+            "/>
+        </g>
+
+
+        <g id="bright-03">
+            <circle cx="1390" cy="330" r="3"/>
+
+            <path d="
+                M 1390 300
+                L 1394 326
+                L 1420 330
+                L 1394 334
+                L 1390 360
+                L 1386 334
+                L 1360 330
+                L 1386 326
+                Z
+            "/>
+        </g>
+
+
+        <g id="bright-04">
+            <circle cx="1660" cy="420" r="3.2"/>
+
+            <path d="
+                M 1660 390
+                L 1664 416
+                L 1690 420
+                L 1664 424
+                L 1660 450
+                L 1656 424
+                L 1630 420
+                L 1656 416
+                Z
+            "/>
+        </g>
+
+    </g>
+
+
+    <!-- =====================================================
+         PEQUEÑOS DESTELLOS BLANCOS
+         ===================================================== -->
+
+    <g
+        id="white-twinkles"
+        fill="#FFFFFF"
+        opacity="0.85"
+    >
+
+        <circle cx="270" cy="390" r="2"/>
+        <circle cx="480" cy="320" r="2.5"/>
+        <circle cx="770" cy="180" r="2"/>
+        <circle cx="1040" cy="390" r="2.5"/>
+        <circle cx="1260" cy="220" r="2"/>
+        <circle cx="1470" cy="510" r="2.5"/>
+        <circle cx="1770" cy="350" r="2"/>
+        <circle cx="530" cy="650" r="2"/>
+        <circle cx="900" cy="700" r="2.5"/>
+        <circle cx="1210" cy="680" r="2"/>
+        <circle cx="1570" cy="690" r="2.5"/>
+
+    </g>
+
+</svg>

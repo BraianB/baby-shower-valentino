@@ -1,0 +1,96 @@
+
+
+/*============================
+
+GLOBOS
+
+============================*/
+
+.balloons{
+
+    position:absolute;
+
+    width:260px;
+
+    bottom:30px;
+
+    right:60px;
+
+}
+
+/*========================
+
+CIELO
+
+========================*/
+
+#sky{
+
+    position:absolute;
+
+    width:100%;
+
+    height:100%;
+
+}
+
+/*========================
+
+ESTRELLAS
+
+========================*/
+
+.star{
+
+    position:absolute;
+
+    width:5px;
+
+    height:5px;
+
+    border-radius:50%;
+
+    background:white;
+
+    box-shadow:
+
+    0 0 10px white,
+
+    0 0 20px white;
+    
+
+}
+
+/*============================
+
+ANIMACIÓN ESTRELLAS
+
+============================*/
+
+@keyframes twinkle{
+
+    0%{
+        opacity:.2;
+        transform:scale(.7);
+    }
+
+    50%{
+        opacity:1;
+        transform:scale(1.4);
+    }
+
+    100%{
+        opacity:.2;
+        transform:scale(.7);
+    }
+
+}
+
+.star{
+
+    animation:twinkle 3s ease-in-out infinite;
+
+    animation-delay:var(--delay);
+}
+
+

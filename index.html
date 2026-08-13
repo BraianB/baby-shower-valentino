@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Baby Shower | Valentino</title>
+
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;700&display=swap"
+rel="stylesheet">
+
+<link rel="stylesheet"
+href="css/style.css">
+
+<link rel="stylesheet" href="css/envelope.css">
+
+<link rel="stylesheet" href="css/scene.css">
+
+<link rel="stylesheet" href="css/reset.css">
+
+<link rel="stylesheet" href="css/invitation.css">
+
+<link rel="stylesheet" href="css/countdown.css">
+
+<link rel="stylesheet" href="css/confirmation.css">
+
+<link rel="stylesheet" href="css/responsive.css">
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+
+</head>
+
+<body>
+
+<!-- ESCENARIO -->
+
+<div class="scene" id="scene">
+
+    <!-- Fondo -->
+
+    <div class="background"></div>
+
+  <!-- ============================
+     CIELO + DECORACIÓN
+============================= -->
+
+<div id="sky">
+
+    <!-- Cielo nocturno -->
+    <img
+        src="assets/svg/background/sky.svg"
+        class="sky-svg"
+        alt=""
+    >
+
+    <!-- Estrellas -->
+    <img
+        src="assets/svg/background/stars.svg"
+        class="stars-svg"
+        alt=""
+    >
+
+    <!-- Luna -->
+    <img
+        src="assets/svg/background/moon.svg"
+        class="moon"
+        alt=""
+    >
+
+</div>
+
+    <!-- Nube -->
+
+    <img
+    src="assets/svg/background/cloud.svg"
+    class="cloud cloud-left">
+
+    <img
+    src="assets/svg/background/cloud.svg"
+    class="cloud cloud-right">
+
+    <!-- Globos -->
+
+    <img
+    src="assets/svg/decoration/balloons.svg"
+    class="balloons">
+
+   <!-- ============================
+     SOBRE
+============================= -->
+
+<div class="envelope-wrapper">
+
+    <div class="envelope">
+
+        <!-- Carta -->
+
+        <div class="letter">
+
+            <div class="letter-content">
+
+                <h4>¡Estás invitado!</h4>
+
+    <h2>Baby Shower</h2>
+
+    <h1>Valentino</h1>
+
+    <p>
+        22 de Agosto • 17:00 hs
+    </p>
+
+            </div>
+
+        </div>
+
+        <!-- Parte trasera -->
+
+        <div class="back"></div>
+
+        <!-- Laterales -->
+
+        <div class="left-fold"></div>
+
+        <div class="right-fold"></div>
+
+        <!-- Frente -->
+
+        <div class="front"></div>
+
+        <!-- Tapa -->
+
+        <div class="flap"></div>
+
+        <!-- Sello -->
+
+        <div class="seal">
+
+            <span>V</span>
+
+        </div>
+
+    </div>
+
+
+    <audio
+    id="bgMusic"
+    preload="auto"
+    loop>
+
+    <source
+        src="assets/music/lullaby.mp3"
+        type="audio/mpeg">
+
+        Tu navegador no soporta audio.
+
+</audio>
+
+</div> <!-- Cierra .envelope-wrapper -->
+
+
+</div> <!-- Cierra #scene -->
+
+
+
+<!-- ======================================
+            INVITACIÓN
+======================================= -->
+
+<section class="invitation">
+
+    <div class="invitation-card">
+
+        <div class="header reveal">
+
+            <div class="bear">
+          <img
+    src="assets/svg/icons/teddy.svg"
+    class="detail-icon"
+    alt=""
+>
+
+            </div>
+
+            <h3>Baby Shower</h3>
+
+            <h1 id="baby-name"></h1>
+
+            <p class="subtitle">
+
+                Una dulce sorpresa está en camino 💙
+
+            </p>
+
+        </div>
+
+        <div class="details">
+
+            <div class="detail reveal">
+
+                <img
+    src="assets/svg/icons/calendar.svg"
+    class="detail-icon"
+    alt=""
+>
+
+                <p id="event-date"></p>
+
+            </div>
+
+            <div class="detail reveal">
+
+                <img
+    src="assets/svg/icons/clock.svg"
+    class="detail-icon"
+    alt=""
+>
+
+                <p id="event-time"></p>
+
+            </div>
+
+            <div class="detail reveal">
+
+                <img
+    src="assets/svg/icons/location.svg"
+    class="detail-icon"
+    alt=""
+>
+
+                <p id="event-address"></p>
+
+            </div>
+
+        </div>
+
+        <div class="countdown reveal">
+
+    <div class="countdown-grid">
+
+        <div class="countdown-item">
+
+            <div
+            id="days"
+            class="countdown-number">
+
+                00
+
+            </div>
+
+            <div class="countdown-label">
+
+                DÍAS
+
+            </div>
+
+        </div>
+
+        <div class="countdown-item">
+
+            <div
+            id="hours"
+            class="countdown-number">
+
+                00
+
+            </div>
+
+            <div class="countdown-label">
+
+                HORAS
+
+            </div>
+
+        </div>
+
+        <div class="countdown-item">
+
+            <div
+            id="minutes"
+            class="countdown-number">
+
+                00
+
+            </div>
+
+            <div class="countdown-label">
+
+                MIN
+
+            </div>
+
+        </div>
+
+        <div class="countdown-item">
+
+            <div
+            id="seconds"
+            class="countdown-number">
+
+                00
+
+            </div>
+
+            <div class="countdown-label">
+
+                SEG
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+            <!-- contador -->
+
+        <div class="buttons reveal">
+
+            <button id="mapsBtn">
+
+                Cómo llegar
+
+            </button>
+
+            <button id="confirmBtn">
+
+                Confirmar asistencia
+
+            </button>
+
+        </div>
+
+<!-- ===========================================
+            MODAL CONFIRMACIÓN
+============================================ -->
+
+<!-- ===========================================
+     MODAL CONFIRMACIÓN
+============================================ -->
+
+<div class="confirmation-modal" id="confirmationModal">
+
+    <div class="confirmation-card">
+
+        <h2>Confirmar asistencia</h2>
+
+        <p>
+            Nos encantaría compartir este momento
+            con vos y tu familia.
+        </p>
+
+
+        <!-- Familia -->
+
+        <input
+            id="familyName"
+            type="text"
+            placeholder="Familia / Apellido"
+            autocomplete="family-name"
+        >
+
+
+        <!-- Cantidad de integrantes -->
+
+        <div class="guest-counter">
+
+            <label for="guestCount">
+                ¿Cuántos integrantes asistirán?
+            </label>
+
+            <div class="counter-control">
+
+                <button
+                    type="button"
+                    id="decreaseGuests"
+                    aria-label="Disminuir cantidad"
+                >
+                    −
+                </button>
+
+                <span id="guestCount">
+                    1
+                </span>
+
+                <button
+                    type="button"
+                    id="increaseGuests"
+                    aria-label="Aumentar cantidad"
+                >
+                    +
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- Asistencia -->
+
+        <div class="attendance">
+
+            <label>
+
+                <input
+                    type="radio"
+                    name="attendance"
+                    value="yes"
+                    checked
+                >
+
+                Sí, asistiremos 💙
+
+            </label>
+
+
+            <label>
+
+                <input
+                    type="radio"
+                    name="attendance"
+                    value="no"
+                >
+
+                No podremos asistir
+
+            </label>
+
+        </div>
+
+
+        <!-- Botones -->
+
+        <div class="modal-buttons">
+
+            <button id="cancelBtn">
+                Cancelar
+            </button>
+
+            <button id="sendWhatsappBtn">
+                Enviar por WhatsApp
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+    </div> <!-- modal buttons -->
+</div><!-- confirmation card -->
+</div><!-- confirmation modal -->
+
+</section>
+
+<script src="js/config.js"></script>
+<script src="js/scene.js"></script>
+<script src="js/envelope.js"></script>
+<script src="js/invitation.js"></script>
+<script src="js/countdown.js"></script>
+<script src="js/confirmation.js"></script>
+<script src="js/main.js"></script>
+
+
+</body>
+
+</html>

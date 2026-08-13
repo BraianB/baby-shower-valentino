@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 160 160"
+    width="160"
+    height="160"
+>
+
+    <defs>
+
+        <!-- Marco azul -->
+        <linearGradient
+            id="calendarBlue"
+            x1="0"
+            y1="0"
+            x2="1"
+            y2="1"
+        >
+            <stop offset="0%" stop-color="#A9DDF8"/>
+            <stop offset="100%" stop-color="#609FDB"/>
+        </linearGradient>
+
+        <!-- Dorado suave -->
+        <linearGradient
+            id="calendarGold"
+            x1="0"
+            y1="0"
+            x2="1"
+            y2="1"
+        >
+            <stop offset="0%" stop-color="#FFE9A6"/>
+            <stop offset="100%" stop-color="#E5B650"/>
+        </linearGradient>
+
+        <!-- Fondo -->
+        <linearGradient
+            id="calendarPaper"
+            x1="0"
+            y1="0"
+            x2="0"
+            y2="1"
+        >
+            <stop offset="0%" stop-color="#FFFFFF"/>
+            <stop offset="100%" stop-color="#F4F8FC"/>
+        </linearGradient>
+
+        <!-- Sombra -->
+        <filter
+            id="calendarShadow"
+            x="-30%"
+            y="-30%"
+            width="160%"
+            height="170%"
+        >
+            <feDropShadow
+                dx="0"
+                dy="6"
+                stdDeviation="5"
+                flood-color="#547FA6"
+                flood-opacity=".22"
+            />
+        </filter>
+
+    </defs>
+
+
+    <!-- =========================================
+         CUERPO DEL CALENDARIO
+    ========================================== -->
+
+    <rect
+        x="25"
+        y="30"
+        width="110"
+        height="105"
+        rx="18"
+        fill="url(#calendarPaper)"
+        stroke="url(#calendarBlue)"
+        stroke-width="5"
+        filter="url(#calendarShadow)"
+    />
+
+
+    <!-- =========================================
+         PARTE SUPERIOR
+    ========================================== -->
+
+    <path
+        d="
+            M 25 48
+            Q 25 30 43 30
+            H 117
+            Q 135 30 135 48
+            V 61
+            H 25
+            Z
+        "
+        fill="url(#calendarBlue)"
+    />
+
+
+    <!-- =========================================
+         ANILLAS
+    ========================================== -->
+
+    <g
+        fill="none"
+        stroke="#DCA83E"
+        stroke-width="6"
+        stroke-linecap="round"
+    >
+
+        <path
+            d="M 55 23 V 43"
+        />
+
+        <path
+            d="M 105 23 V 43"
+        />
+
+    </g>
+
+
+    <!-- Pequeños brillos de las anillas -->
+
+    <g
+        fill="#FFF3C4"
+        opacity=".8"
+    >
+
+        <circle
+            cx="53"
+            cy="25"
+            r="2.5"
+        />
+
+        <circle
+            cx="103"
+            cy="25"
+            r="2.5"
+        />
+
+    </g>
+
+
+    <!-- =========================================
+         FECHA
+    ========================================== -->
+
+    <text
+        x="80"
+        y="96"
+        text-anchor="middle"
+        font-family="Arial, sans-serif"
+        font-size="34"
+        font-weight="700"
+        fill="#5C86C3"
+    >
+        29
+    </text>
+
+
+    <!-- =========================================
+         PEQUEÑO DETALLE DORADO
+    ========================================== -->
+
+    <path
+        d="
+            M 80 105
+            L 84 113
+            L 92 117
+            L 84 121
+            L 80 129
+            L 76 121
+            L 68 117
+            L 76 113
+            Z
+        "
+        fill="url(#calendarGold)"
+        opacity=".9"
+    />
+
+
+    <!-- =========================================
+         DETALLES LATERALES
+    ========================================== -->
+
+    <circle
+        cx="45"
+        cy="78"
+        r="4"
+        fill="#FFE7A0"
+    />
+
+    <circle
+        cx="115"
+        cy="78"
+        r="4"
+        fill="#A9DDF8"
+    />
+
+</svg>

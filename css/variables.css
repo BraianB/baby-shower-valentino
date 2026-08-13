@@ -1,0 +1,39 @@
+:root{
+
+    /* Colores */
+
+    --primary:#7CB7F5;
+
+    --primary-dark:#5E9FE6;
+
+    --secondary:#FFF8EE;
+
+    --background:#EAF7FF;
+
+    --gold:#F7C45C;
+
+    --text:#546372;
+
+    --white:#FFFFFF;
+
+    /* Sombras */
+
+    --shadow:
+
+    0 15px 45px rgba(0,0,0,.12);
+
+    --shadow-soft:
+
+    0 8px 25px rgba(0,0,0,.08);
+
+    /* Bordes */
+
+    --radius:28px;
+
+    /* Tipografías */
+
+    --title:'Great Vibes',cursive;
+
+    --textFont:'Poppins',sans-serif;
+
+}

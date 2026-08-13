@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 650">
+<defs>
+<linearGradient id="paper" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#fffefc"/>
+<stop offset="45%" stop-color="#f8eee2"/>
+<stop offset="100%" stop-color="#e5cfb3"/>
+</linearGradient>
+<linearGradient id="paperFront" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0%" stop-color="#f5e6d3"/>
+<stop offset="100%" stop-color="#d6b898"/>
+</linearGradient>
+<radialGradient id="wax" cx=".35" cy=".3" r=".9">
+<stop offset="0%" stop-color="#fff5ca"/>
+<stop offset=".35" stop-color="#e5bc58"/>
+<stop offset="1" stop-color="#8e5d0d"/>
+</radialGradient>
+
+<filter id="shadow" x="-30%" y="-30%" width="170%" height="180%">
+<feDropShadow dx="0" dy="18" stdDeviation="16" flood-opacity=".18"/>
+</filter>
+
+<filter id="paperNoise">
+<feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" seed="12"/>
+<feColorMatrix type="saturate" values="0"/>
+<feComponentTransfer><feFuncA type="table" tableValues="0 0 .03"/></feComponentTransfer>
+</filter>
+
+<filter id="innerShadow" x="-30%" y="-30%" width="170%" height="170%">
+<feOffset dx="0" dy="2"/>
+<feGaussianBlur stdDeviation="4"/>
+<feComposite operator="out" in2="SourceGraphic"/>
+<feColorMatrix type="matrix"
+values="0 0 0 0 0
+        0 0 0 0 0
+        0 0 0 0 0
+        0 0 0 .28 0"/>
+<feBlend in="SourceGraphic"/>
+</filter>
+
+<clipPath id="cardClip">
+<path d="M235 165H665V505H235Z"/>
+</clipPath>
+</defs>
+
+<ellipse cx="450" cy="552" rx="275" ry="36" fill="#000" opacity=".08"/>
+
+<g id="back" filter="url(#shadow)">
+<path d="M235 185Q235 165 255 165H645Q665 165 665 185V485Q665 505 645 505H255Q235 505 235 485Z"
+fill="url(#paper)" stroke="#d1baa0" stroke-width="2"/>
+<rect x="235" y="165" width="430" height="340" fill="#fff" opacity=".10" filter="url(#paperNoise)"/>
+<path d="M255 185L450 342L645 185" fill="none" stroke="#cfb79a" opacity=".55"/>
+<path d="M255 185Q450 323 645 185" fill="none" stroke="#fff" opacity=".25" stroke-width="4"/>
+</g>
+
+<g id="card" clip-path="url(#cardClip)">
+<rect x="310" y="170" width="280" height="235" rx="18" fill="#fffefc" stroke="#e6d7c4"/>
+<rect x="335" y="205" width="220" height="4" rx="2" fill="#e8ddcf"/>
+<rect x="335" y="232" width="185" height="4" rx="2" fill="#e8ddcf"/>
+<rect x="335" y="259" width="210" height="4" rx="2" fill="#e8ddcf"/>
+<rect x="335" y="286" width="150" height="4" rx="2" fill="#e8ddcf"/>
+</g>
+
+<g id="front" filter="url(#innerShadow)">
+<path d="M235 505L450 338L665 505Z"
+fill="url(#paperFront)"
+stroke="#c8ad8e"
+stroke-width="2"/>
+<path d="M235 505L450 338L665 505"
+fill="none"
+stroke="#bea281"/>
+</g>
+
+<g id="flap" transform-origin="450 185">
+<path d="M255 185
+Q450 92 645 185
+Q585 286 450 342
+Q315 286 255 185Z"
+fill="url(#paper)"
+stroke="#ceb396"
+stroke-width="2"/>
+<path d="M280 193Q450 148 620 193" fill="none" stroke="#fff" opacity=".30" stroke-width="5"/>
+<path d="M300 208Q450 284 600 208" fill="none" stroke="#d7c3aa" opacity=".55"/>
+</g>
+
+<g id="seal" filter="url(#shadow)">
+<path d="M450 257
+C462 255 472 259 482 266
+C490 275 492 286 490 299
+C486 311 477 321 465 326
+C455 330 444 330 434 326
+C422 321 414 312 410 300
+C408 287 410 275 418 266
+C428 258 438 255 450 257Z"
+fill="url(#wax)"
+stroke="#84550b"
+stroke-width="2"/>
+
+<path d="M437 276L450 308L463 276"
+fill="none"
+stroke="#fff9e6"
+stroke-width="5"
+stroke-linecap="round"
+stroke-linejoin="round"/>
+
+<ellipse cx="441" cy="279" rx="8" ry="5" fill="#fff" opacity=".20"/>
+</g>
+</svg>

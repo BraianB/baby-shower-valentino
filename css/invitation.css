@@ -1,0 +1,377 @@
+/*=============================
+        INVITACIÓN
+==============================*/
+
+.invitation{
+
+    position:fixed;
+
+    inset:0;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background: rgba(255,255,255,.08);
+
+    visibility:hidden;
+
+    opacity:0;
+
+    pointer-events:none;
+
+    z-index:100;
+
+    border-radius: 40px;
+
+    box-shadow: 0 35px 90px rgba(0,0,0,.16);
+
+    transition: .4s;
+
+}
+
+.invitation.active{
+
+    visibility:visible;
+
+    opacity:1;
+
+    pointer-events:auto;
+
+}
+
+.invitation-card{
+
+    width:min(720px,80vw);
+
+    max-width:92%;
+
+    background:white;
+
+    border-radius:40px;
+
+    padding:60px;
+
+    box-shadow:
+
+        0 30px 90px rgba(0,0,0,.18);
+
+    transform: translateY(40px);
+
+    opacity: 0;
+}
+
+
+
+.header{
+
+    text-align:center;
+
+}
+
+.bear {
+    width: 120px;
+    height: 120px;
+
+    margin: 0 auto 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bear img {
+    width: 120px;
+    height: 120px;
+
+    object-fit: contain;
+
+    display: block;
+}
+
+
+.header h3{
+
+    color:#8AAEE5;
+
+    font-size:30px;
+
+    font-family:"Great Vibes";
+
+}
+
+.header h1{
+
+    font-size:82px;
+
+    color:#5A83C8;
+
+    margin:10px 0;
+
+}
+
+.subtitle{
+
+    color:#6F7B8A;
+
+    margin-top:15px;
+
+    margin-top: 12px;
+
+    margin-bottom: 45px;
+
+}
+
+.details{
+
+    margin-top:40px;
+
+}
+
+.detail {
+    display: flex;
+
+    align-items: center;
+
+    gap: 24px;
+
+    margin: 22px 0;
+
+    padding: 8px 0;
+
+    font-size: 22px;
+}
+
+.detail p {
+    margin: 0;
+
+    flex: 1;
+
+    line-height: 1.4;
+}
+
+/* =========================================
+   ICONOS SVG DE LOS DETALLES
+========================================= */
+
+.detail-icon {
+    width: 88px;
+    height: 88px;
+
+    flex: 0 0 88px;
+
+    object-fit: contain;
+
+    display: block;
+}
+
+.buttons{
+
+    align-items: center;
+
+    display: flex;
+
+    margin-top:50px;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    transition: 
+        transform .3s,
+        box-shadow .3s;
+
+}
+
+.buttons button:hover{
+
+    transform:
+        translateY(-4px);
+
+    box-shadow:
+        0 12px 28px rgba(100,150,255,.35);
+
+}
+
+.buttons button{
+
+    border:none;
+
+    background:#6EA7F0;
+
+    color:white;
+
+    padding:16px 30px;
+
+    border-radius:14px;
+
+    cursor:pointer;
+
+    font-size:18px;
+
+    transition:.3s;
+
+}
+
+.buttons button:hover{
+
+    transform:translateY(-3px);
+
+}
+
+/* =========================================
+   ANIMACIÓN DE CABECERA
+========================================= */
+
+.invitation.active .bear {
+    animation: teddyReveal .8s cubic-bezier(.22, 1, .36, 1) .15s forwards;
+}
+
+.invitation.active .header h3 {
+    opacity: 0;
+    transform: translateY(15px);
+    animation: headerReveal .7s ease .35s forwards;
+}
+
+.invitation.active .header h1 {
+    opacity: 0;
+    transform: translateY(20px) scale(.96);
+    animation: titleReveal .8s cubic-bezier(.22, 1, .36, 1) .5s forwards;
+}
+
+.invitation.active .subtitle {
+    opacity: 0;
+    transform: translateY(12px);
+    animation: headerReveal .7s ease .75s forwards;
+}
+
+
+@keyframes teddyReveal {
+
+    from {
+        opacity: 0;
+        transform: translateY(15px) scale(.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+
+@keyframes headerReveal {
+
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes titleReveal {
+
+    from {
+        opacity: 0;
+        transform: translateY(20px) scale(.96);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* =========================================
+   ENTRADA ESCALONADA DE LA INFORMACIÓN
+========================================= */
+
+.invitation.active .details .detail {
+    opacity: 0;
+    transform: translateY(18px);
+}
+
+.invitation.active .details .detail:nth-child(1) {
+    animation: detailReveal .7s ease 1s forwards;
+}
+
+.invitation.active .details .detail:nth-child(2) {
+    animation: detailReveal .7s ease 1.15s forwards;
+}
+
+.invitation.active .details .detail:nth-child(3) {
+    animation: detailReveal .7s ease 1.3s forwards;
+}
+
+
+/* =========================================
+   CONTADOR
+========================================= */
+
+.invitation.active .countdown {
+    opacity: 0;
+    transform: translateY(20px) scale(.98);
+
+    animation:
+        countdownReveal
+        .8s cubic-bezier(.22,1,.36,1)
+        1.55s forwards;
+}
+
+
+/* =========================================
+   BOTONES
+========================================= */
+
+.invitation.active .buttons {
+    opacity: 0;
+    transform: translateY(18px);
+
+    animation:
+        detailReveal
+        .7s ease
+        1.8s forwards;
+}
+
+
+/* =========================================
+   KEYFRAMES
+========================================= */
+
+@keyframes detailReveal {
+
+    from {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+@keyframes countdownReveal {
+
+    from {
+        opacity: 0;
+        transform: translateY(20px) scale(.98);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+
+}

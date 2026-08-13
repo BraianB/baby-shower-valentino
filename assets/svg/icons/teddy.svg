@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 200 200"
+    width="200"
+    height="200"
+>
+
+    <defs>
+
+        <!-- Pelaje -->
+        <linearGradient
+            id="bearFur"
+            x1="0"
+            y1="0"
+            x2="1"
+            y2="1"
+        >
+            <stop offset="0%" stop-color="#F3D4A5"/>
+            <stop offset="55%" stop-color="#DDB27C"/>
+            <stop offset="100%" stop-color="#BE8F5D"/>
+        </linearGradient>
+
+        <!-- Hocico -->
+        <radialGradient
+            id="bearMuzzle"
+            cx="45%"
+            cy="35%"
+            r="70%"
+        >
+            <stop offset="0%" stop-color="#FFF1D5"/>
+            <stop offset="100%" stop-color="#E8C89A"/>
+        </radialGradient>
+
+        <!-- Moño -->
+        <linearGradient
+            id="bearBlue"
+            x1="0"
+            y1="0"
+            x2="1"
+            y2="1"
+        >
+            <stop offset="0%" stop-color="#A9DDF8"/>
+            <stop offset="100%" stop-color="#609FDB"/>
+        </linearGradient>
+
+        <!-- Dorado -->
+        <linearGradient
+            id="bearGold"
+            x1="0"
+            y1="0"
+            x2="1"
+            y2="1"
+        >
+            <stop offset="0%" stop-color="#FFE9A6"/>
+            <stop offset="100%" stop-color="#E5B650"/>
+        </linearGradient>
+
+        <!-- Sombra -->
+        <filter
+            id="bearShadow"
+            x="-30%"
+            y="-30%"
+            width="160%"
+            height="170%"
+        >
+            <feDropShadow
+                dx="0"
+                dy="7"
+                stdDeviation="6"
+                flood-color="#547FA6"
+                flood-opacity=".20"
+            />
+        </filter>
+
+    </defs>
+
+
+    <!-- =========================================
+         DESTELLOS
+    ========================================== -->
+
+    <g fill="#FFE7A0">
+
+        <path
+            d="
+                M 30 52
+                L 34 63
+                L 45 67
+                L 34 71
+                L 30 82
+                L 26 71
+                L 15 67
+                L 26 63
+                Z
+            "
+        />
+
+        <path
+            d="
+                M 169 112
+                L 172 121
+                L 181 124
+                L 172 127
+                L 169 136
+                L 166 127
+                L 157 124
+                L 166 121
+                Z
+            "
+        />
+
+    </g>
+
+
+    <!-- =========================================
+         OREJAS
+    ========================================== -->
+
+    <circle
+        cx="59"
+        cy="58"
+        r="29"
+        fill="url(#bearFur)"
+        filter="url(#bearShadow)"
+    />
+
+    <circle
+        cx="141"
+        cy="58"
+        r="29"
+        fill="url(#bearFur)"
+        filter="url(#bearShadow)"
+    />
+
+    <!-- Interior de las orejas -->
+
+    <circle
+        cx="59"
+        cy="59"
+        r="15"
+        fill="#E8BD8A"
+        opacity=".75"
+    />
+
+    <circle
+        cx="141"
+        cy="59"
+        r="15"
+        fill="#E8BD8A"
+        opacity=".75"
+    />
+
+
+    <!-- =========================================
+         CABEZA
+    ========================================== -->
+
+    <circle
+        cx="100"
+        cy="82"
+        r="65"
+        fill="url(#bearFur)"
+        stroke="#FFFFFF"
+        stroke-width="4"
+        filter="url(#bearShadow)"
+    />
+
+
+    <!-- =========================================
+         MEJILLAS
+    ========================================== -->
+
+    <ellipse
+        cx="61"
+        cy="105"
+        rx="18"
+        ry="10"
+        fill="#EFAE9C"
+        opacity=".38"
+    />
+
+    <ellipse
+        cx="139"
+        cy="105"
+        rx="18"
+        ry="10"
+        fill="#EFAE9C"
+        opacity=".38"
+    />
+
+
+    <!-- =========================================
+         OJOS
+    ========================================== -->
+
+    <path
+        d="
+            M 65 82
+            Q 75 91 85 82
+        "
+        fill="none"
+        stroke="#5E5147"
+        stroke-width="5"
+        stroke-linecap="round"
+    />
+
+    <path
+        d="
+            M 115 82
+            Q 125 91 135 82
+        "
+        fill="none"
+        stroke="#5E5147"
+        stroke-width="5"
+        stroke-linecap="round"
+    />
+
+
+    <!-- =========================================
+         HOCICO
+    ========================================== -->
+
+    <ellipse
+        cx="100"
+        cy="105"
+        rx="29"
+        ry="23"
+        fill="url(#bearMuzzle)"
+    />
+
+
+    <!-- Nariz -->
+
+    <ellipse
+        cx="100"
+        cy="99"
+        rx="9"
+        ry="7"
+        fill="#6D5548"
+    />
+
+    <ellipse
+        cx="97"
+        cy="97"
+        rx="3"
+        ry="2"
+        fill="#FFF4DD"
+        opacity=".7"
+    />
+
+
+    <!-- Boca -->
+
+    <path
+        d="
+            M 100 105
+            C 95 112 88 112 85 108
+
+            M 100 105
+            C 105 112 112 112 115 108
+        "
+        fill="none"
+        stroke="#76594B"
+        stroke-width="3"
+        stroke-linecap="round"
+    />
+
+
+    <!-- =========================================
+         CUERPO
+    ========================================== -->
+
+    <ellipse
+        cx="100"
+        cy="159"
+        rx="53"
+        ry="30"
+        fill="url(#bearFur)"
+        stroke="#FFFFFF"
+        stroke-width="4"
+    />
+
+
+    <!-- =========================================
+         PANZA
+    ========================================== -->
+
+    <ellipse
+        cx="100"
+        cy="160"
+        rx="29"
+        ry="20"
+        fill="#EAC99A"
+        opacity=".8"
+    />
+
+
+    <!-- =========================================
+         MOÑO AZUL
+    ========================================== -->
+
+    <!-- Lazo izquierdo -->
+
+    <path
+        d="
+            M 100 140
+            C 86 128 67 130 66 141
+            C 65 151 82 156 100 149
+            Z
+        "
+        fill="url(#bearBlue)"
+        stroke="#FFFFFF"
+        stroke-width="3"
+    />
+
+    <!-- Lazo derecho -->
+
+    <path
+        d="
+            M 100 140
+            C 114 128 133 130 134 141
+            C 135 151 118 156 100 149
+            Z
+        "
+        fill="url(#bearBlue)"
+        stroke="#FFFFFF"
+        stroke-width="3"
+    />
+
+    <!-- Centro -->
+
+    <circle
+        cx="100"
+        cy="145"
+        r="9"
+        fill="url(#bearGold)"
+        stroke="#FFFFFF"
+        stroke-width="3"
+    />
+
+    <circle
+        cx="97"
+        cy="142"
+        r="2.5"
+        fill="#FFF7D5"
+    />
+
+
+    <!-- =========================================
+         PEQUEÑOS BRILLOS
+    ========================================== -->
+
+    <circle
+        cx="49"
+        cy="133"
+        r="4"
+        fill="#FFFFFF"
+        opacity=".75"
+    />
+
+    <circle
+        cx="151"
+        cy="139"
+        r="4"
+        fill="#FFE9A6"
+        opacity=".8"
+    />
+
+</svg>

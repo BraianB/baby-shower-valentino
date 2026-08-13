@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 1920 1080"
+    width="1920"
+    height="1080"
+    preserveAspectRatio="xMidYMid slice"
+>
+
+    <defs>
+
+        <!-- Degradado principal del cielo -->
+        <linearGradient
+            id="skyGradient"
+            x1="0"
+            y1="0"
+            x2="0"
+            y2="1"
+        >
+            <stop
+                offset="0%"
+                stop-color="#183B5C"
+            />
+
+            <stop
+                offset="28%"
+                stop-color="#285878"
+            />
+
+            <stop
+                offset="62%"
+                stop-color="#6698B8"
+            />
+
+            <stop
+                offset="100%"
+                stop-color="#C9E4F3"
+            />
+        </linearGradient>
+
+
+        <!-- Luz suave detrás de la zona central -->
+        <radialGradient
+            id="centerGlow"
+            cx="50%"
+            cy="42%"
+            r="65%"
+        >
+            <stop
+                offset="0%"
+                stop-color="#DFF2FC"
+                stop-opacity="0.72"
+            />
+
+            <stop
+                offset="45%"
+                stop-color="#B9DCEF"
+                stop-opacity="0.20"
+            />
+
+            <stop
+                offset="100%"
+                stop-color="#7FAAC5"
+                stop-opacity="0"
+            />
+        </radialGradient>
+
+
+        <!-- Resplandor nocturno superior -->
+        <radialGradient
+            id="nightGlow"
+            cx="50%"
+            cy="0%"
+            r="80%"
+        >
+            <stop
+                offset="0%"
+                stop-color="#416F91"
+                stop-opacity="0.28"
+            />
+
+            <stop
+                offset="100%"
+                stop-color="#183B5C"
+                stop-opacity="0"
+            />
+        </radialGradient>
+
+
+        <!-- Suave luz inferior -->
+        <linearGradient
+            id="bottomLight"
+            x1="0"
+            y1="0"
+            x2="0"
+            y2="1"
+        >
+            <stop
+                offset="0%"
+                stop-color="#D9EEF8"
+                stop-opacity="0"
+            />
+
+            <stop
+                offset="100%"
+                stop-color="#F4FBFF"
+                stop-opacity="0.62"
+            />
+        </linearGradient>
+
+    </defs>
+
+
+    <!-- =====================================================
+         CIELO BASE
+         ===================================================== -->
+
+    <rect
+        x="0"
+        y="0"
+        width="1920"
+        height="1080"
+        fill="url(#skyGradient)"
+    />
+
+
+    <!-- =====================================================
+         RESPLANDOR CENTRAL
+         ===================================================== -->
+
+    <rect
+        x="0"
+        y="0"
+        width="1920"
+        height="1080"
+        fill="url(#centerGlow)"
+    />
+
+
+    <!-- =====================================================
+         PROFUNDIDAD DEL CIELO NOCTURNO
+         ===================================================== -->
+
+    <rect
+        x="0"
+        y="0"
+        width="1920"
+        height="620"
+        fill="url(#nightGlow)"
+    />
+
+
+    <!-- =====================================================
+         LUZ SUAVE EN LA PARTE INFERIOR
+         ===================================================== -->
+
+    <rect
+        x="0"
+        y="600"
+        width="1920"
+        height="480"
+        fill="url(#bottomLight)"
+    />
+
+</svg>
