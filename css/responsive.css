@@ -1,69 +1,859 @@
-/* ===========================
-   TABLETS Y CELULARES
-=========================== */
+/* =========================================================
+   RESPONSIVE
+   BABY SHOWER VALENTINO
+========================================================= */
 
-@media (max-width: 768px){
 
-    .invitation-card{
+/* =========================================================
+   TABLETS
+   769px → 1024px
+========================================================= */
 
-        width:95%;
-        padding:30px 20px;
+@media (max-width: 1024px) {
+
+    /* -------------------------
+       ESCENARIO
+    ------------------------- */
+
+    .moon {
+        width: 190px;
+        top: 55px;
+    }
+
+    .cloud-left {
+        width: 340px;
+        left: -170px;
+    }
+
+    .cloud-right {
+        width: 340px;
+        right: -170px;
+        bottom: 80px;
+    }
+
+    .balloons {
+        width: 220px;
+        right: 25px;
+        bottom: 25px;
+    }
+
+
+    /* -------------------------
+       SOBRE
+    ------------------------- */
+
+    .envelope {
+        width: 320px;
+        height: 215px;
+    }
+
+    .letter {
+        left: 25px;
+        width: 270px;
+        height: 165px;
+    }
+
+    .left-fold,
+    .right-fold {
+        width: 160px;
+        height: 215px;
+    }
+
+    .flap {
+        height: 125px;
+    }
+
+    .seal {
+        width: 68px;
+        height: 68px;
+        top: 95px;
+    }
+
+
+    /* -------------------------
+       INVITACIÓN
+    ------------------------- */
+
+    .invitation-card {
+
+        width: min(680px, 88vw);
+
+        padding: 45px;
+
+        border-radius: 34px;
 
     }
 
-    .header h1{
+    .header h1 {
 
-        font-size:56px;
-
-    }
-
-    .details{
-
-        gap:18px;
-
-    }
-
-    .countdown-grid{
-
-        grid-template-columns:repeat(2,1fr);
-
-        gap:16px;
-
-    }
-
-    .buttons{
-
-        flex-direction:column;
-
-        width:100%;
-
-    }
-
-    .buttons button{
-
-        width:100%;
+        font-size: clamp(58px, 8vw, 76px);
 
     }
 
 }
 
-@media (max-width:480px){
 
-    .header h1{
+/* =========================================================
+   CELULARES
+   hasta 768px
+========================================================= */
 
-        font-size:44px;
+@media (max-width: 768px) {
+
+    /* =====================================================
+       ESCENARIO
+    ===================================================== */
+
+    #scene {
+
+        width: 100%;
+
+        min-height: 100dvh;
+
+        height: 100dvh;
 
     }
 
-    .countdown-number{
 
-        font-size:36px;
+    /* =====================================================
+       FONDO
+    ===================================================== */
+
+    .moon {
+
+        width: 145px;
+
+        top: 45px;
 
     }
 
-    .bear{
 
-        width:90px;
+    .cloud-left {
+
+        width: 280px;
+
+        left: -165px;
+
+        top: 75px;
+
+    }
+
+
+    .cloud-right {
+
+        width: 280px;
+
+        right: -165px;
+
+        bottom: 70px;
+
+    }
+
+
+    .balloons {
+
+        width: 170px;
+
+        right: -5px;
+
+        bottom: 20px;
+
+    }
+
+
+    /* =====================================================
+       SOBRE
+    ===================================================== */
+
+    .envelope-wrapper {
+
+        top: 54%;
+
+    }
+
+
+    .envelope {
+
+        width: 290px;
+
+        height: 195px;
+
+    }
+
+
+    .letter {
+
+        left: 22px;
+
+        top: 20px;
+
+        width: 246px;
+
+        height: 150px;
+
+    }
+
+
+    .left-fold,
+    .right-fold {
+
+        width: 145px;
+
+        height: 195px;
+
+    }
+
+
+    .flap {
+
+        height: 112px;
+
+    }
+
+
+    .seal {
+
+        width: 62px;
+
+        height: 62px;
+
+        top: 86px;
+
+        font-size: 28px;
+
+    }
+
+
+    .letter-content h1 {
+
+        font-size: 40px;
+
+    }
+
+
+    .letter-content h3 {
+
+        font-size: 28px;
+
+    }
+
+
+    /* =====================================================
+       INVITACIÓN
+    ===================================================== */
+
+    .invitation {
+
+        padding: 12px;
+
+        box-sizing: border-box;
+
+        overflow-y: auto;
+
+        align-items: flex-start;
+
+    }
+
+
+    .invitation-card {
+
+        width: 100%;
+
+        max-width: 680px;
+
+        box-sizing: border-box;
+
+        margin: 12px auto;
+
+        padding: 35px 24px 30px;
+
+        border-radius: 28px;
+
+    }
+
+
+    /* =====================================================
+       ENCABEZADO
+    ===================================================== */
+
+    .bear {
+
+        width: 80px;
+
+        margin: 0 auto 5px;
+
+    }
+
+
+    .bear img {
+
+        width: 100%;
+
+        height: auto;
+
+        display: block;
+
+    }
+
+
+    .header h3 {
+
+        font-size: 26px;
+
+        margin-top: 4px;
+
+    }
+
+
+    .header h1 {
+
+        font-size: clamp(46px, 12vw, 64px);
+
+        line-height: 1;
+
+        margin: 12px 0;
+
+        word-break: break-word;
+
+    }
+
+
+    .subtitle {
+
+        font-size: 14px;
+
+        line-height: 1.5;
+
+        margin-bottom: 30px;
+
+    }
+
+
+    /* =====================================================
+       DETALLES
+    ===================================================== */
+
+    .details {
+
+        margin-top: 25px;
+
+    }
+
+
+    .detail {
+
+        width: 100%;
+
+        display: flex;
+
+        align-items: center;
+
+        gap: 18px;
+
+        margin: 18px 0;
+
+        padding: 8px 0;
+
+        font-size: 17px;
+
+    }
+
+
+    .detail-icon {
+
+        width: 58px;
+
+        height: 58px;
+
+        flex: 0 0 58px;
+
+        object-fit: contain;
+
+    }
+
+
+    .detail p {
+
+        margin: 0;
+
+        line-height: 1.4;
+
+        overflow-wrap: anywhere;
+
+    }
+
+
+    /* =====================================================
+       CONTADOR
+    ===================================================== */
+
+    .countdown {
+
+        margin-top: 32px;
+
+    }
+
+
+    .countdown-grid {
+
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        gap: 12px;
+
+    }
+
+
+    .countdown-item {
+
+        padding: 15px 8px;
+
+        border-radius: 16px;
+
+        min-width: 0;
+
+    }
+
+
+    .countdown-number {
+
+        font-size: clamp(32px, 9vw, 44px);
+
+        line-height: 1;
+
+    }
+
+
+    .countdown-label {
+
+        font-size: 10px;
+
+        letter-spacing: 1.5px;
+
+        margin-top: 8px;
+
+    }
+
+
+    /* =====================================================
+       BOTONES
+    ===================================================== */
+
+    .buttons {
+
+        width: 100%;
+
+        margin-top: 32px;
+
+        flex-direction: column;
+
+        gap: 12px;
+
+    }
+
+
+    .buttons button {
+
+        width: 100%;
+
+        min-height: 50px;
+
+        padding: 13px 18px;
+
+        font-size: 15px;
+
+    }
+
+}
+
+
+/* =========================================================
+   CELULARES PEQUEÑOS
+   hasta 480px
+========================================================= */
+
+@media (max-width: 480px) {
+
+    /* -------------------------
+       FONDO
+    ------------------------- */
+
+    .moon {
+
+        width: 125px;
+
+        top: 35px;
+
+    }
+
+
+    .cloud-left {
+
+        width: 230px;
+
+        left: -145px;
+
+        top: 70px;
+
+    }
+
+
+    .cloud-right {
+
+        width: 230px;
+
+        right: -145px;
+
+        bottom: 55px;
+
+    }
+
+
+    .balloons {
+
+        width: 145px;
+
+        right: -10px;
+
+        bottom: 15px;
+
+    }
+
+
+    /* -------------------------
+       SOBRE
+    ------------------------- */
+
+    .envelope-wrapper {
+
+        top: 53%;
+
+    }
+
+
+    .envelope {
+
+        width: 260px;
+
+        height: 175px;
+
+    }
+
+
+    .letter {
+
+        left: 20px;
+
+        top: 18px;
+
+        width: 220px;
+
+        height: 135px;
+
+    }
+
+
+    .left-fold,
+    .right-fold {
+
+        width: 130px;
+
+        height: 175px;
+
+    }
+
+
+    .flap {
+
+        height: 100px;
+
+    }
+
+
+    .seal {
+
+        width: 56px;
+
+        height: 56px;
+
+        top: 77px;
+
+        font-size: 25px;
+
+    }
+
+
+    .letter-content h1 {
+
+        font-size: 34px;
+
+    }
+
+
+    .letter-content h3 {
+
+        font-size: 24px;
+
+    }
+
+
+    /* -------------------------
+       INVITACIÓN
+    ------------------------- */
+
+    .invitation {
+
+        padding: 7px;
+
+    }
+
+
+    .invitation-card {
+
+        margin: 7px auto;
+
+        padding: 28px 18px 24px;
+
+        border-radius: 24px;
+
+    }
+
+
+    .bear {
+
+        width: 68px;
+
+    }
+
+
+    .header h3 {
+
+        font-size: 23px;
+
+    }
+
+
+    .header h1 {
+
+        font-size: clamp(40px, 13vw, 54px);
+
+        margin: 9px 0;
+
+    }
+
+
+    .subtitle {
+
+        font-size: 13px;
+
+        margin-bottom: 22px;
+
+    }
+
+
+    /* -------------------------
+       DETALLES
+    ------------------------- */
+
+    .details {
+
+        margin-top: 18px;
+
+    }
+
+
+    .detail {
+
+        gap: 13px;
+
+        margin: 14px 0;
+
+        font-size: 15px;
+
+    }
+
+
+    .detail-icon {
+
+        width: 50px;
+
+        height: 50px;
+
+        flex-basis: 50px;
+
+    }
+
+
+    /* -------------------------
+       CONTADOR
+    ------------------------- */
+
+    .countdown {
+
+        margin-top: 25px;
+
+    }
+
+
+    .countdown-grid {
+
+        gap: 9px;
+
+    }
+
+
+    .countdown-item {
+
+        padding: 13px 5px;
+
+        border-radius: 14px;
+
+    }
+
+
+    .countdown-number {
+
+        font-size: 31px;
+
+    }
+
+
+    .countdown-label {
+
+        font-size: 9px;
+
+        letter-spacing: 1px;
+
+    }
+
+
+    /* -------------------------
+       BOTONES
+    ------------------------- */
+
+    .buttons {
+
+        margin-top: 25px;
+
+        gap: 9px;
+
+    }
+
+
+    .buttons button {
+
+        min-height: 47px;
+
+        font-size: 14px;
+
+        border-radius: 12px;
+
+    }
+
+}
+
+
+/* =========================================================
+   CELULARES MUY PEQUEÑOS
+   hasta 360px
+========================================================= */
+
+@media (max-width: 360px) {
+
+    .moon {
+
+        width: 105px;
+
+        top: 28px;
+
+    }
+
+
+    .envelope {
+
+        transform: scale(.90);
+
+    }
+
+
+    .invitation-card {
+
+        padding-left: 14px;
+
+        padding-right: 14px;
+
+    }
+
+
+    .header h1 {
+
+        font-size: 38px;
+
+    }
+
+
+    .detail {
+
+        font-size: 14px;
+
+    }
+
+
+    .detail-icon {
+
+        width: 46px;
+
+        height: 46px;
+
+        flex-basis: 46px;
+
+    }
+
+
+    .countdown-number {
+
+        font-size: 27px;
+
+    }
+
+}
+
+
+/* =========================================================
+   PANTALLAS CON POCA ALTURA
+   Ej: celulares horizontales
+========================================================= */
+
+@media (max-height: 650px) and (orientation: landscape) {
+
+    .moon {
+
+        width: 100px;
+
+        top: 20px;
+
+    }
+
+
+    .envelope-wrapper {
+
+        top: 56%;
+
+    }
+
+
+    .invitation {
+
+        align-items: flex-start;
+
+        overflow-y: auto;
+
+    }
+
+
+    .invitation-card {
+
+        margin: 10px auto;
+
     }
 
 }
