@@ -857,3 +857,63 @@
     }
 
 }
+
+
+/* =========================================================
+   FIX RESPONSIVE SOBRE - MOBILE
+========================================================= */
+
+@media screen and (max-width: 768px) {
+
+    .envelope-wrapper {
+        width: 100%;
+        left: 50%;
+        top: 54%;
+        transform: translate(-50%, -50%);
+    }
+
+    .envelope-wrapper .envelope {
+        width: 290px !important;
+        height: 195px !important;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .envelope-wrapper {
+        width: 100%;
+        left: 50%;
+        top: 53%;
+        transform: translate(-50%, -50%);
+    }
+
+    .envelope-wrapper .envelope {
+        width: 260px !important;
+        height: 175px !important;
+    }
+
+    .envelope-wrapper .letter {
+        width: 220px !important;
+        height: 135px !important;
+        left: 20px !important;
+        top: 18px !important;
+    }
+
+    .envelope-wrapper .left-fold,
+    .envelope-wrapper .right-fold {
+        width: 130px !important;
+        height: 175px !important;
+    }
+
+    .envelope-wrapper .flap {
+        height: 100px !important;
+    }
+
+    .envelope-wrapper .seal {
+        width: 56px !important;
+        height: 56px !important;
+        top: 77px !important;
+    }
+
+}
