@@ -1,136 +1,200 @@
-/*=============================
-        INVITACIÓN
-==============================*/
+/* =========================================================
+   INVITACIÓN — BABY SHOWER VALENTINO
+   ---------------------------------------------------------
+   Este archivo controla únicamente:
+   - Contenedor de la invitación
+   - Tarjeta
+   - Cabecera
+   - Teddy
+   - Textos
+   - Detalles del evento
+   - Botones
 
-.invitation{
+   Las animaciones de entrada son controladas por GSAP.
+========================================================= */
 
-    position:fixed;
 
-    inset:0;
+/* =========================================================
+   CONTENEDOR PRINCIPAL
+========================================================= */
 
-    display:flex;
+.invitation {
 
-    justify-content:center;
+    position: fixed;
 
-    align-items:center;
+    inset: 0;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
 
     background: rgba(255,255,255,.08);
 
-    visibility:hidden;
+    visibility: hidden;
 
-    opacity:0;
+    opacity: 0;
 
-    pointer-events:none;
+    pointer-events: none;
 
-    z-index:100;
+    z-index: 100;
 
     border-radius: 40px;
 
-    box-shadow: 0 35px 90px rgba(0,0,0,.16);
-
-    transition: .4s;
-
+    box-shadow:
+        0 35px 90px rgba(0,0,0,.16);
 }
 
-.invitation.active{
 
-    visibility:visible;
+/* =========================================================
+   INVITACIÓN ACTIVA
+   ---------------------------------------------------------
+   La visibilidad se controla mediante JS.
+   La animación de entrada la controla GSAP.
+========================================================= */
 
-    opacity:1;
+.invitation.active {
 
-    pointer-events:auto;
+    visibility: visible;
 
+    opacity: 1;
+
+    pointer-events: auto;
 }
 
-.invitation-card{
 
-    width:min(720px,80vw);
+/* =========================================================
+   TARJETA
+========================================================= */
 
-    max-width:92%;
+.invitation-card {
 
-    background:white;
+    width: min(720px, 80vw);
 
-    border-radius:40px;
+    max-width: 92%;
 
-    padding:60px;
+    background: #FFFFFF;
+
+    border-radius: 40px;
+
+    padding: 60px;
 
     box-shadow:
-
         0 30px 90px rgba(0,0,0,.18);
 
+    /*
+       Estado inicial utilizado por GSAP.
+       invitation.js anima este elemento hacia:
+       opacity: 1
+       y: 0
+    */
     transform: translateY(40px);
 
     opacity: 0;
 }
 
 
+/* =========================================================
+   CABECERA
+========================================================= */
 
-.header{
+.header {
 
-    text-align:center;
-
+    text-align: center;
 }
+
+
+/* =========================================================
+   TEDDY SVG
+========================================================= */
 
 .bear {
+
     width: 120px;
+
     height: 120px;
 
-    margin: 0 auto 10px;
+    margin: 0 auto 8px;
 
     display: flex;
-    justify-content: center;
+
     align-items: center;
+
+    justify-content: center;
 }
+
 
 .bear img {
+
     width: 120px;
+
     height: 120px;
 
-    object-fit: contain;
-
     display: block;
+
+    object-fit: contain;
 }
 
 
-.header h3{
+/* =========================================================
+   BABY SHOWER
+========================================================= */
 
-    color:#8AAEE5;
+.header h3 {
 
-    font-size:30px;
+    margin: 0;
 
-    font-family:"Great Vibes";
+    color: #8AAEE5;
 
+    font-size: 30px;
+
+    font-family: "Great Vibes";
 }
 
-.header h1{
 
-    font-size:82px;
+/* =========================================================
+   NOMBRE
+========================================================= */
 
-    color:#5A83C8;
+.header h1 {
 
-    margin:10px 0;
+    margin: 10px 0;
 
+    font-size: 82px;
+
+    line-height: 1.05;
+
+    color: #5A83C8;
 }
 
-.subtitle{
 
-    color:#6F7B8A;
+/* =========================================================
+   SUBTÍTULO
+========================================================= */
 
-    margin-top:15px;
+.subtitle {
+
+    color: #6F7B8A;
 
     margin-top: 12px;
 
     margin-bottom: 45px;
-
 }
 
-.details{
 
-    margin-top:40px;
+/* =========================================================
+   DETALLES DEL EVENTO
+========================================================= */
 
+.details {
+
+    margin-top: 40px;
 }
+
 
 .detail {
+
     display: flex;
 
     align-items: center;
@@ -144,20 +208,15 @@
     font-size: 22px;
 }
 
-.detail p {
-    margin: 0;
 
-    flex: 1;
-
-    line-height: 1.4;
-}
-
-/* =========================================
-   ICONOS SVG DE LOS DETALLES
-========================================= */
+/* =========================================================
+   ICONOS SVG
+========================================================= */
 
 .detail-icon {
+
     width: 88px;
+
     height: 88px;
 
     flex: 0 0 88px;
@@ -167,211 +226,203 @@
     display: block;
 }
 
-.buttons{
+
+/* =========================================================
+   TEXTO DE LOS DETALLES
+========================================================= */
+
+.detail p {
+
+    margin: 0;
+
+    flex: 1;
+
+    line-height: 1.4;
+
+    color: #171717;
+}
+
+
+/* =========================================================
+   BOTONES
+========================================================= */
+
+.buttons {
 
     align-items: center;
 
     display: flex;
 
-    margin-top:50px;
+    justify-content: center;
 
-    display:flex;
+    gap: 20px;
 
-    justify-content:center;
-
-    gap:20px;
-
-    transition: 
-        transform .3s,
-        box-shadow .3s;
-
+    margin-top: 50px;
 }
 
-.buttons button:hover{
+
+.buttons button {
+
+    border: none;
+
+    background: #6EA7F0;
+
+    color: white;
+
+    padding: 16px 30px;
+
+    border-radius: 14px;
+
+    cursor: pointer;
+
+    font-size: 18px;
+
+    transition: .3s;
+}
+
+
+.buttons button:hover {
 
     transform:
-        translateY(-4px);
+        translateY(-3px);
 
     box-shadow:
-        0 12px 28px rgba(100,150,255,.35);
-
-}
-
-.buttons button{
-
-    border:none;
-
-    background:#6EA7F0;
-
-    color:white;
-
-    padding:16px 30px;
-
-    border-radius:14px;
-
-    cursor:pointer;
-
-    font-size:18px;
-
-    transition:.3s;
-
-}
-
-.buttons button:hover{
-
-    transform:translateY(-3px);
-
-}
-
-/* =========================================
-   ANIMACIÓN DE CABECERA
-========================================= */
-
-.invitation.active .bear {
-    animation: teddyReveal .8s cubic-bezier(.22, 1, .36, 1) .15s forwards;
-}
-
-.invitation.active .header h3 {
-    opacity: 0;
-    transform: translateY(15px);
-    animation: headerReveal .7s ease .35s forwards;
-}
-
-.invitation.active .header h1 {
-    opacity: 0;
-    transform: translateY(20px) scale(.96);
-    animation: titleReveal .8s cubic-bezier(.22, 1, .36, 1) .5s forwards;
-}
-
-.invitation.active .subtitle {
-    opacity: 0;
-    transform: translateY(12px);
-    animation: headerReveal .7s ease .75s forwards;
+        0 12px 28px
+        rgba(100,150,255,.35);
 }
 
 
-@keyframes teddyReveal {
+/* =========================================================
+   RESPONSIVE — CELULAR
+========================================================= */
 
-    from {
-        opacity: 0;
-        transform: translateY(15px) scale(.9);
+@media (max-width: 480px) {
+
+    .invitation-card {
+
+        width: 92vw;
+
+        max-width: 92vw;
+
+        padding: 38px 28px;
+
+        border-radius: 30px;
     }
 
-    to {
-        opacity: 1;
-        transform: translateY(0) scale(1);
+
+    .bear {
+
+        width: 100px;
+
+        height: 100px;
+    }
+
+
+    .bear img {
+
+        width: 100px;
+
+        height: 100px;
+    }
+
+
+    .header h3 {
+
+        font-size: 27px;
+    }
+
+
+    .header h1 {
+
+        font-size: 58px;
+
+        margin: 8px 0;
+    }
+
+
+    .subtitle {
+
+        font-size: 15px;
+
+        margin-bottom: 32px;
+    }
+
+
+    .details {
+
+        margin-top: 25px;
+    }
+
+
+    .detail {
+
+        gap: 16px;
+
+        margin: 18px 0;
+
+        font-size: 18px;
+    }
+
+
+    .detail-icon {
+
+        width: 72px;
+
+        height: 72px;
+
+        flex: 0 0 72px;
+    }
+
+
+    .buttons {
+
+        gap: 10px;
+
+        margin-top: 35px;
+
+        flex-wrap: wrap;
+    }
+
+
+    .buttons button {
+
+        padding: 13px 20px;
+
+        font-size: 15px;
     }
 }
 
 
-@keyframes headerReveal {
+/* =========================================================
+   RESPONSIVE — CELULARES PEQUEÑOS
+========================================================= */
 
-    from {
-        opacity: 0;
-        transform: translateY(15px);
+@media (max-width: 360px) {
+
+    .invitation-card {
+
+        padding: 30px 20px;
     }
 
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
 
+    .header h1 {
 
-@keyframes titleReveal {
-
-    from {
-        opacity: 0;
-        transform: translateY(20px) scale(.96);
+        font-size: 50px;
     }
 
-    to {
-        opacity: 1;
-        transform: translateY(0) scale(1);
-    }
-}
 
-/* =========================================
-   ENTRADA ESCALONADA DE LA INFORMACIÓN
-========================================= */
+    .detail {
 
-.invitation.active .details .detail {
-    opacity: 0;
-    transform: translateY(18px);
-}
-
-.invitation.active .details .detail:nth-child(1) {
-    animation: detailReveal .7s ease 1s forwards;
-}
-
-.invitation.active .details .detail:nth-child(2) {
-    animation: detailReveal .7s ease 1.15s forwards;
-}
-
-.invitation.active .details .detail:nth-child(3) {
-    animation: detailReveal .7s ease 1.3s forwards;
-}
-
-
-/* =========================================
-   CONTADOR
-========================================= */
-
-.invitation.active .countdown {
-    opacity: 0;
-    transform: translateY(20px) scale(.98);
-
-    animation:
-        countdownReveal
-        .8s cubic-bezier(.22,1,.36,1)
-        1.55s forwards;
-}
-
-
-/* =========================================
-   BOTONES
-========================================= */
-
-.invitation.active .buttons {
-    opacity: 0;
-    transform: translateY(18px);
-
-    animation:
-        detailReveal
-        .7s ease
-        1.8s forwards;
-}
-
-
-/* =========================================
-   KEYFRAMES
-========================================= */
-
-@keyframes detailReveal {
-
-    from {
-        opacity: 0;
-        transform: translateY(18px);
+        font-size: 17px;
     }
 
-    to {
-        opacity: 1;
-        transform: translateY(0);
+
+    .detail-icon {
+
+        width: 64px;
+
+        height: 64px;
+
+        flex-basis: 64px;
     }
-
-}
-
-
-@keyframes countdownReveal {
-
-    from {
-        opacity: 0;
-        transform: translateY(20px) scale(.98);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0) scale(1);
-    }
-
 }

@@ -37,14 +37,17 @@ function animateInvitation(){
     tl.from(".detail",{
         opacity:0,
         x:-20,
-        stagger:.15
+        duration:.35,
+        stagger:.10
     });
 
     tl.from(".countdown-item",{
-        opacity:0,
-        y:20,
-        stagger:.08
-    });
+         opacity: 0,
+    y: 15,
+    duration: .35,
+    stagger: .05,
+    ease: "power2.out"
+    },"-=.20");
 
     tl.from(".buttons",{
         opacity:0,

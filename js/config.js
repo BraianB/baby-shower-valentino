@@ -2,19 +2,17 @@ const CONFIG = {
 
     babyName:"Valentino",
 
-    eventDate:"2026-08-22T17:00:00",
-
-    date:"Sabado 29 de Agosto de 2026",
+    date:"Sabado 05 de Septiembre de 2026",
 
     time:"17:00 hs",
 
-    address:"A. Lincoln 1252",
+    address:"CIC LOS PUESTOS - LEALES",
 
-    maps:"https://maps.app.goo.gl/dEFCdnvxuFaAdenz8",
+    //maps:"https://maps.app.goo.gl/dEFCdnvxuFaAdenz8",
 
-    //maps:"https://maps.app.goo.gl/YSHbSUHU9LupN3gH9",
+    maps:"https://maps.app.goo.gl/YSHbSUHU9LupN3gH9",
 
-    whatsapp:"5493816430705",
+    whatsapp:"5493815682626",
 
     confirmUntil:"10 de Agosto",
 
