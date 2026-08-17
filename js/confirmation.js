@@ -143,6 +143,9 @@ document.addEventListener("DOMContentLoaded", () => {
     // =========================================
 
     sendBtn.addEventListener("click", () => {
+         const blueHeart = "\u{1F499}";
+const teddy = "\u{1F9F8}";
+
 
         const family =
             familyName.value.trim();
@@ -200,7 +203,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
             answer =
-                `Sí, asistiremos 💙\n\n` +
+                `Sí, asistiremos ${blueHeart}  \n\n` +
                 `Cantidad de integrantes: ${integrantes}.`;
 
         } else {
@@ -215,10 +218,8 @@ document.addEventListener("DOMContentLoaded", () => {
         // MENSAJE
         // =====================================
 
-        const blueHeart = "\u{1F499}";
-        const teddy = "\u{1F9F8}";
-
-        const message =
+    
+const message =
 `Hola ${blueHeart}
 
 Somos la familia ${family}.
@@ -241,9 +242,10 @@ ${answer}
         // URL WHATSAPP
         // =====================================
 
-        const whatsappUrl =
-            `https://wa.me/${phone}?text=` +
-            encodeURIComponent(message);
+       const whatsappUrl =
+    `https://api.whatsapp.com/send?phone=${phone}&text=${encodeURIComponent(message)}`;
+            console.log(message);
+console.log(encodeURIComponent(message));
 
 
         // =====================================
